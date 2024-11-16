@@ -61,7 +61,7 @@ class Vector:
         scalar_product_of_vectors = self.x * other.x + self.y * other.y
         vector_model_length = self.get_length() * other.get_length()
         return int(
-            round(degrees(acos(scalar_product_of_vectors / vector_model_length)), 0)
+            round(degrees(acos(scalar_product_of_vectors / vector_model_length)), 0) # NOQA E501
         )  # NOQA E501
 
     def get_angle(self) -> float:
